@@ -42,7 +42,7 @@ void MyServer::state_changed(QAbstractSocket::SocketState) // изм сост с
     if (socket == firstSocket && socket->state() == QAbstractSocket::UnconnectedState)
     {
         socket->deleteLater();
-        firstSocket == Q_NULLPTR;
+        firstSocket = Q_NULLPTR;
     }
 }
 
