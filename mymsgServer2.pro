@@ -17,6 +17,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
+        myclient.cpp \
+        mymessage.cpp \
         myserver.cpp
 
 # Default rules for deployment.
@@ -25,4 +27,10 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
+    myclient.h \
+    mymessage.h \
     myserver.h
+
+FORMS += \
+    form.ui \
+    registration_form.ui
