@@ -5,6 +5,8 @@ MyServer::MyServer(QObject * parent) : QObject (parent), firstSocket(Q_NULLPTR)
     server = new QTcpServer(this);
     qDebug() << "server listen " << server->listen(QHostAddress::Any, 30000);
     connect(server, &QTcpServer::newConnection, this, &MyServer::incoming_connection);
+
+    //при создании сервера адрес создателя должен писаться в базу данных
 }
 
 void MyServer::ready_read() // действия с пришедшим пакетом
