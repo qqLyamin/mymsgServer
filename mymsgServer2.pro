@@ -34,5 +34,8 @@ HEADERS += \
     myserver.h
 
 FORMS += \
+    connect.ui \
+    create.ui \
+    create_connect.ui \
     form.ui \
     registration_form.ui
