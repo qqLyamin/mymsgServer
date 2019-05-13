@@ -21,7 +21,8 @@ SOURCES += \
         main.cpp \
         myclient.cpp \
         mymessage.cpp \
-        myserver.cpp
+        myserver.cpp \
+        registration.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -31,7 +32,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 HEADERS += \
     myclient.h \
     mymessage.h \
-    myserver.h
+    myserver.h \
+    registration.h
 
 FORMS += \
     connect.ui \
